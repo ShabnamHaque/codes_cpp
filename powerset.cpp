@@ -24,7 +24,7 @@ public:
     {
         vector<vector<char>> ds;
         vector<char> a;
-        solveforpowerset(s, ds, a,s.size()-1);
+        solveforpowerset(s, ds, a,s.size());
 
         return ds;
     }
@@ -44,6 +44,6 @@ int main()
         }
         cout << "/";
     }
-    // output   CBA/CB/CA/C/BA/B/A// 
+    // output  DCBA/DCB/DCA/DC/DBA/DB/DA/D/CBA/CB/CA/C/BA/B/A//
     return 0;
 }
