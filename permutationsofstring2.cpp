@@ -26,7 +26,7 @@ public:
 
         for (int i = l; i <= r; i++)
         {
-            swap(s[l], s[i]);
+            swap(s[l], s[i]); // BFS
             permute(s, l + 1, r, ds);
 
             swap(s[l], s[i]);
