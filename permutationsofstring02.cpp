@@ -1,10 +1,7 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 
-
-class Solution
-{
+class Solution{
 public:
   set<string> converttoset(vector<string> v)
   {
@@ -24,28 +21,19 @@ public:
       ds.push_back(s);
       return;
     }
-
     for (int i = l; i <= r; i++)
     {
       swap(s[l], s[i]);  // l starts from 0 
-      /*
-      we swap l'th and i'th chars then we move the l one step frwrd before backtracking we swap all chars by itself.
-      
-      */
       permute(s, l + 1, r, ds);
    // after rching l==r we backtrack 
 
       swap(s[l], s[i]);
     }
   }
-
-
   vector<string> find_permutation(string s)
   {
     vector<string> ds;
-
     permute(s, 0, s.size() - 1, ds);
-
     set<string> s1;
     s1 = converttoset(ds);
 
@@ -63,5 +51,6 @@ int main(){
  for(int i=0;i<ans.size();i++){
     cout<<ans[i]<<"/";
     }
+  
     return 0;
 }
