@@ -4,7 +4,7 @@ using namespace std;
 
 int noofsubseqofsumk(int index, int n, int arr[], int reqsum, int s)
 {
-    if (s > reqsum)
+    if (s > reqsum) //if arr contains only positives .
         return 0;
     if (index == n)
     {
