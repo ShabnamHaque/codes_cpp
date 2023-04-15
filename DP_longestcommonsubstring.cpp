@@ -15,10 +15,13 @@ using namespace std;
         //both move}
       
         else{ 
-        ans=0;           //reset the answer.
+        ans=0;     
+	}//reset the answer.
+	 
+	 
         f(i-1,j,s,t,dp); //one moves 
         f(i,j-1,s,t,dp); //one moves and in the rest is checked.
-        }
+        
         
         return dp[i][j]=ans;
     }
