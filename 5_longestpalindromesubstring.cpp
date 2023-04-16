@@ -75,4 +75,22 @@ abcbs
 0 0 0 1 0
 0 0 0 0 1
 The longest common substring is bcb
+
+
+
+yabadedeededi    aba   ded  ede  **dedeeded***     ded  ede  
+1 0 0 0 0 0 0 0 0 0 0 0 0
+0 1 0 1 0 0 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0 0 0 0 0 0
+0 0 0 0 1 0 1 0 0 0 0 1 0
+0 0 0 0 0 1 0 1 0 0 1 0 0 
+0 0 0 0 0 0 1 0 0 1 0 0 0
+0 0 0 0 0 0 0 1 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 1 0 0
+0 0 0 0 0 0 0 0 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0 0 0 1
+The longest common substring is dedeeded
 */
