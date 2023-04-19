@@ -3,28 +3,41 @@
 using namespace std;
 #define MAX 10000
 
+
 class Stack
 {
-    int top;
-
 public:
     int a[MAX];
+    int top;
     Stack()
     {
         top = -1;
     }
+
     int pop();
     bool push(int x);
     bool isempty();
     int peek();
     int randomaccess(int a[], int x);
+    int size();
 };
 
+int Stack::size()
+{
+    if (top == -1)
+        return 0;
+    else
+        return top + 1;
+}
 int Stack::randomaccess(int a[], int x)
 {
+    if (x > top)
+    {
+        cout << "out of range\n";
+        return 0;
+    }
     return a[x];
 }
-
 int Stack::pop()
 {
     if (top < 0)
@@ -89,7 +102,7 @@ StackNode *newNode(int dataval)
 
 int isEmpty(StackNode *root)
 {
-    return !root;
+    return root==NULL;
 }
 
 void push(StackNode **root, int val)
@@ -121,6 +134,7 @@ int peek(StackNode *root)
     else
         return root->data;
 }
+
 
 int main()
 {
